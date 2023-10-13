@@ -1,0 +1,30 @@
+shq=100
+paq=200
+cname=input('enter customer name')
+cno=input('enter customer number')
+sh=int(input('Enter no of shirts'))
+pa=int(input('Enter no of pants'))
+pc=input('Enter promo code:')
+bill=(sh*shq)+(pa*paq)
+if pc=='HOLI' or pc=='holi':
+    disc=bill*50/100
+elif pc=='SUNDAY' or pc=='sunday':
+    disc==bill*40/100
+elif bill>=2000:
+    disc=bill*20/100
+elif bill>=1000:
+    disc=bill*10/100
+elif bill>=500:
+    disc=bill*5/100
+else:
+    disc=bill*3/100
+tbill=bill-disc#500
+gst=tbill*12/100#60
+obill=tbill+gst
+print('customer name:',cname)
+print('customer phno:',cno)
+print('bill:',bill)
+print('Discount:',disc)
+print('Gst 12%:',gst)
+print('Bill to be paid:',obill)
+print('**Thank you!Visit Again***')
